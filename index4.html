@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio — BTS SIO SISR</title>
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans leading-relaxed selection:bg-emerald-500 selection:text-slate-950">
+
+    <!-- Navigation Fixe -->
+    <header class="fixed top-0 left-0 w-full bg-slate-950/85 backdrop-blur-md border-b border-slate-800/80 z-50">
+        <nav class="max-w-4xl mx-auto px-6 h-16 flex justify-between items-center text-sm">
+            <a href="#about" class="font-bold text-emerald-400 hover:text-emerald-300 transition flex items-center gap-2">
+                <span class="relative flex h-2.5 w-2.5">
+                    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                    <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500"></span>
+                </span>
+                <span class="font-mono text-xs sm:text-sm">> alexandre_dev.sys</span>
+            </a>
+            <div class="space-x-3 sm:space-x-6 text-xs sm:text-sm font-medium text-slate-300">
+                <a href="#about" class="hover:text-emerald-400 transition">À propos</a>
+                <a href="#skills" class="hover:text-emerald-400 transition">Compétences</a>
+                <a href="#projects" class="hover:text-emerald-400 transition">Projets</a>
+                <a href="#veille" class="hover:text-emerald-400 transition">Veille</a>
+                <a href="#contact" class="hover:text-emerald-400 transition">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="max-w-4xl mx-auto px-6 pt-32 space-y-24">
+
+        <!-- Accueil & Terminal Header -->
+        <section id="about" class="space-y-8">
+            
+            <!-- Badge Statut -->
+            <div class="inline-flex items-center gap-2 px-3 py-1 bg-emerald-950/60 border border-emerald-800/60 text-emerald-400 text-xs font-mono rounded-full">
+                <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                <span>BTS SIO SISR — Disponible pour Alternance / Stage</span>
+            </div>
+
+            <div class="grid md:grid-cols-5 gap-8 items-center">
+                <!-- Présentation Principale -->
+                <div class="md:col-span-3 space-y-4">
+                    <h1 class="text-3xl sm:text-4xl font-extrabold tracking-tight text-slate-100 leading-tight">
+                        Administration Systèmes, Réseaux & Sécurité
+                    </h1>
+                    <p class="text-slate-400 text-sm sm:text-base leading-relaxed">
+                        Bonjour ! Je suis étudiant en BTS SIO option SISR. Passionné par la virtualisation, l'automatisation et le durcissement des infrastructures IT, je prépare le passage de mes épreuves de synthèse.
+                    </p>
+                    
+                    <div class="flex flex-wrap gap-3 pt-2">
+                        <a href="#projects" class="bg-emerald-600 hover:bg-emerald-500 text-slate-950 font-bold px-5 py-2.5 rounded-lg text-sm transition shadow-lg shadow-emerald-950/60 flex items-center gap-2">
+                            <span>Explorer mes projets</span>
+                            <span>→</span>
+                        </a>
+                        <a href="cv.pdf" target="_blank" rel="noopener noreferrer" class="border border-slate-700 bg-slate-900/60 text-slate-300 hover:text-white hover:border-emerald-500/50 px-5 py-2.5 rounded-lg text-sm font-medium transition flex items-center gap-2">
+                            <span>📄 Télécharger mon CV</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Simulation Fenêtre Terminal Visual -->
+                <div class="md:col-span-2 bg-slate-900 border border-slate-800 rounded-xl overflow-hidden shadow-2xl font-mono text-xs">
+                    <div class="bg-slate-950 px-4 py-2 border-b border-slate-800 flex items-center gap-2">
+                        <div class="w-3 h-3 rounded-full bg-red-500/80"></div>
+                        <div class="w-3 h-3 rounded-full bg-yellow-500/80"></div>
+                        <div class="w-3 h-3 rounded-full bg-green-500/80"></div>
+                        <span class="text-slate-500 text-[10px] ml-2">bash — 80x24</span>
+                    </div>
+                    <div class="p-4 space-y-2 text-slate-300">
+                        <p><span class="text-emerald-400">sisr@portfolio:~$</span> whoami</p>
+                        <p class="text-slate-400 pl-4"># Admin Systèmes & Réseaux en formation</p>
+                        <p><span class="text-emerald-400">sisr@portfolio:~$</span> cat stack.txt</p>
+                        <p class="text-emerald-300 pl-4">[+] Windows Server, Linux (Debian)</p>
+                        <p class="text-emerald-300 pl-4">[+] Proxmox, VMware, pfSense</p>
+                        <p class="text-emerald-300 pl-4">[+] Zabbix, Cisco IOS, Docker</p>
+                        <p><span class="text-emerald-400">sisr@portfolio:~$</span> <span class="animate-pulse">_</span></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Compétences Techniques -->
+        <section id="skills" class="space-y-6">
+            <div class="flex items-center justify-between border-b border-slate-800 pb-3">
+                <h2 class="text-xl font-bold text-emerald-400 flex items-center gap-2">
+                    <span>⚡</span> Compétences Techniques
+                </h2>
+                <span class="text-xs font-mono text-slate-500">SISR Portfolio</span>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-5 text-sm">
+                <!-- Systèmes & Virtu -->
+                <div class="bg-slate-900/50 p-6 rounded-xl border border-slate-800 hover:border-emerald-500/50 transition group space-y-3">
+                    <div class="w-10 h-10 rounded-lg bg-emerald-950/80 border border-emerald-800/60 flex items-center justify-center text-emerald-400 text-lg group-hover:scale-110 transition">
+                        🖥️
+                    </div>
+                    <h3 class="font-semibold text-slate-100">Systèmes & Virtualisation</h3>
+                    <ul class="text-xs text-slate-400 space-y-1.5 list-disc list-inside">
+                        <li>Active Directory DS, GPO, DNS, DHCP</li>
+                        <li>Debian, Ubuntu Server (CLI)</li>
+                        <li>Proxmox VE & VMware ESXi</li>
+                        <li>Conteneurisation Docker / Portainer</li>
+                    </ul>
+                </div>
+
+                <!-- Réseaux -->
+                <div class="bg-slate-900/50 p-6 rounded-xl border border-slate-800 hover:border-emerald-500/50 transition group space-y-3">
+                    <div class="w-10 h-10 rounded-lg bg-emerald-950/80 border border-emerald-800/60 flex items-center justify-center text-emerald-400 text-lg group-hover:scale-110 transition">
+                        🌐
+                    </div>
+                    <h3 class="font-semibold text-slate-100">Réseaux & Infrastructures</h3>
+                    <ul class="text-xs text-slate-400 space-y-1.5 list-disc list-inside">
+                        <li>Architecture OSI / TCP-IP</li>
+                        <li>VLANs, Trunking 802.1Q, Inter-VLAN</li>
+                        <li>Switching & Routage Cisco (CLI)</li>
+                        <li>Analyse de trames avec Wireshark</li>
+                    </ul>
+                </div>
+
+                <!-- Sécurité -->
+                <div class="bg-slate-900/50 p-6 rounded-xl border border-slate-800 hover:border-emerald-500/50 transition group space-y-3">
+                    <div class="w-10 h-10 rounded-lg bg-emerald-950/80 border border-emerald-800/60 flex items-center justify-center text-emerald-400 text-lg group-hover:scale-110 transition">
+                        🔒
+                    </div>
+                    <h3 class="font-semibold text-slate-100">Sécurité & Supervision</h3>
+                    <ul class="text-xs text-slate-400 space-y-1.5 list-disc list-inside">
+                        <li>Pare-feu pfSense & Règles de filtrage</li>
+                        <li>VPN OpenVPN & IPsec</li>
+                        <li>Supervision Zabbix & Grafana (SNMP)</li>
+                        <li>Sauvegardes automatisées (Veeam)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications & Formations -->
+        <section class="bg-slate-900/40 p-6 rounded-xl border border-slate-800/80 flex flex-wrap justify-between items-center gap-4">
+            <div>
+                <h3 class="font-semibold text-sm text-slate-200">Certifications & Attestations</h3>
+                <p class="text-xs text-slate-400">Formations complémentaires validées au cours du cursus</p>
+            </div>
+            <div class="flex flex-wrap gap-2 text-xs font-mono">
+                <span class="bg-emerald-950/80 text-emerald-300 border border-emerald-800/50 px-3 py-1.5 rounded-lg">ANSII SecNumAcadémie</span>
+                <span class="bg-emerald-950/80 text-emerald-300 border border-emerald-800/50 px-3 py-1.5 rounded-lg">Cisco CCNA (en cours)</span>
+            </div>
+        </section>
+
+        <!-- Projets & Réalisations -->
+        <section id="projects" class="space-y-6">
+            <div class="flex items-center justify-between border-b border-slate-800 pb-3">
+                <h2 class="text-xl font-bold text-emerald-400 flex items-center gap-2">
+                    <span>📁</span> Projets & Réalisations
+                </h2>
+                <span class="text-xs font-mono text-slate-500">Épreuves BTS E4 / E5</span>
+            </div>
+
+            <div class="grid gap-5">
+                <!-- Projet 1 -->
+                <article class="bg-slate-900/50 p-6 rounded-xl border border-slate-800 hover:border-emerald-500/40 transition space-y-4">
+                    <div class="flex justify-between items-start flex-wrap gap-2">
+                        <div>
+                            <h3 class="font-semibold text-lg text-slate-100">Supervision centralisée avec Zabbix & Grafana</h3>
+                            <p class="text-xs text-emerald-400 font-mono mt-0.5">Contexte : Stage de 2ème année</p>
+                        </div>
+                        <span class="text-xs bg-slate-800 text-slate-300 px-3 py-1 rounded-full border border-slate-700">Projet SISR</span>
+                    </div>
+
+                    <p class="text-sm text-slate-400 leading-relaxed">
+                        Déploiement d'un serveur de supervision sous Debian. Configuration d'agents Zabbix et remontée d'alertes SNMPv3 sur les équipements réseaux. Interfaçage avec Grafana pour la création de métriques en temps réel.
+                    </p>
+
+                    <div class="flex flex-wrap gap-2 text-xs">
+                        <span class="bg-slate-950 text-emerald-400 border border-emerald-900/60 px-2.5 py-1 rounded">Debian</span>
+                        <span class="bg-slate-950 text-emerald-400 border border-emerald-900/60 px-2.5 py-1 rounded">Zabbix</span>
+                        <span class="bg-slate-950 text-emerald-400 border border-emerald-900/60 px-2.5 py-1 rounded">Grafana</span>
+                        <span class="bg-slate-950 text-emerald-400 border border-emerald-900/60 px-2.5 py-1 rounded">SNMPv3</span>
+                    </div>
+
+                    <div class="pt-3 border-t border-slate-800/60 flex justify-end">
+                        <a href="doc-projet-1.pdf" target="_blank" rel="noopener noreferrer" class="text-xs text-emerald-400 hover:text-emerald-300 font-medium flex items-center gap-1 hover:underline">
+                            <span>📄 Consulter la fiche technique (PDF)</span>
+                            <span>→</span>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Projet 2 -->
+                <article class="bg-slate-900/50 p-6 rounded-xl border border-slate-800 hover:border-emerald-500/40 transition space-y-4">
+                    <div class="flex justify-between items-start flex-wrap gap-2">
+                        <div>
+                            <h3 class="font-semibold text-lg text-slate-100">Mise en place d'une infrastructure Active Directory & GPO</h3>
+                            <p class="text-xs text-emerald-400 font-mono mt-0.5">Contexte : TP d'Atelier Pro</p>
+                        </div>
+                        <span class="text-xs bg-slate-800 text-slate-300 px-3 py-1 rounded-full border border-slate-700">Projet SISR</span>
+                    </div>
+
+                    <p class="text-sm text-slate-400 leading-relaxed">
+                        Installation de Windows Server 2022, création du domaine, déploiement des unités d'organisation (OU) et stratégie de groupe (GPO) pour le déploiement automatisé de logiciels et la restriction d'accès des utilisateurs.
+                    </p>
+
+                    <div class="flex flex-wrap gap-2 text-xs">
+                        <span class="bg-slate-950 text-emerald-400 border border-emerald-900/60 px-2.5 py-1 rounded">Windows Server 2022</span>
+                        <span class="bg-slate-950 text-emerald-400 border border-emerald-900/60 px-2.5 py-1 rounded">Active Directory</span>
+                        <span class="bg-slate-950 text-emerald-400 border border-emerald-900/60 px-2.5 py-1 rounded">GPO</span>
+                        <span class="bg-slate-950 text-emerald-400 border border-emerald-900/60 px-2.5 py-1 rounded">DHCP / DNS</span>
+                    </div>
+
+                    <div class="pt-3 border-t border-slate-800/60 flex justify-end">
+                        <a href="doc-projet-2.pdf" target="_blank" rel="noopener noreferrer" class="text-xs text-emerald-400 hover:text-emerald-300 font-medium flex items-center gap-1 hover:underline">
+                            <span>📄 Consulter la fiche technique (PDF)</span>
+                            <span>→</span>
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Veille Technologique -->
+        <section id="veille" class="space-y-6">
+            <div class="flex items-center justify-between border-b border-slate-800 pb-3">
+                <h2 class="text-xl font-bold text-emerald-400 flex items-center gap-2">
+                    <span>📡</span> Veille Technologique
+                </h2>
+            </div>
+
+            <div class="bg-slate-900/50 p-6 rounded-xl border border-slate-800 space-y-4">
+                <div class="space-y-1">
+                    <span class="text-xs text-emerald-400 font-mono">Sujet d'étude</span>
+                    <h3 class="font-semibold text-lg text-slate-100">L'architecture de sécurité Zéro Trust (Zero Trust Architecture)</h3>
+                </div>
+                <p class="text-sm text-slate-400 leading-relaxed">
+                    Suivi régulier des évolutions de la cybersécurité axées sur l'accès à moindre privilège et la vérification continue des identités au sein du réseau d'entreprise. Outils de flux : Feedly, CERT-FR, ZDNet.
+                </p>
+                <div class="pt-2">
+                    <a href="dossier-veille.pdf" target="_blank" rel="noopener noreferrer" class="text-xs text-emerald-400 hover:underline inline-flex items-center gap-1 font-medium">
+                        📄 Télécharger le dossier de synthèse (PDF) →
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact & Liens -->
+        <section id="contact" class="space-y-6 pb-20">
+            <div class="flex items-center justify-between border-b border-slate-800 pb-3">
+                <h2 class="text-xl font-bold text-emerald-400 flex items-center gap-2">
+                    <span>📫</span> Contact
+                </h2>
+            </div>
+
+            <div class="bg-slate-900/50 p-6 rounded-xl border border-slate-800 space-y-4 text-sm text-slate-300">
+                <p class="text-slate-400">N'hésitez pas à me contacter pour toute demande relative à mon parcours ou à mon portfolio :</p>
+                <div class="space-y-2 font-mono text-xs sm:text-sm">
+                    <p class="flex items-center gap-3">
+                        <span class="text-emerald-400 font-bold">Email :</span>
+                        <a href="mailto:votre.email@domaine.com" class="hover:text-emerald-400 hover:underline transition">votre.email@domaine.com</a>
+                    </p>
+                    <p class="flex items-center gap-3">
+                        <span class="text-emerald-400 font-bold">LinkedIn :</span>
+                        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="hover:text-emerald-400 hover:underline transition">linkedin.com/in/votre-profil</a>
+                    </p>
+                    <p class="flex items-center gap-3">
+                        <span class="text-emerald-400 font-bold">GitHub :</span>
+                        <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="hover:text-emerald-400 hover:underline transition">github.com/votre-compte</a>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-900 py-8 text-center text-xs text-slate-600 font-mono">
+        <p>BTS SIO SISR Portfolio — Construit avec HTML5 & Tailwind CSS</p>
+    </footer>
+
+</body>
+</html>

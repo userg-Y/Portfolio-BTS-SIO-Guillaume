@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio — BTS SIO SISR</title>
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans leading-relaxed">
+
+    <!-- Navigation -->
+    <header class="fixed top-0 left-0 w-full bg-slate-900/80 backdrop-blur border-b border-slate-800 z-50">
+        <nav class="max-w-4xl mx-auto px-6 h-16 flex justify-between items-center text-sm">
+            <span class="font-bold text-emerald-400">Guillaume HORTA</span>
+            <div class="space-x-6">
+                <a href="#about" class="hover:text-emerald-400 transition">À propos</a>
+                <a href="#skills" class="hover:text-emerald-400 transition">Compétences</a>
+                <a href="#projects" class="hover:text-emerald-400 transition">Projets</a>
+                <a href="#veille" class="hover:text-emerald-400 transition">Veille</a>
+                <a href="#contact" class="hover:text-emerald-400 transition">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="max-w-4xl mx-auto px-6 pt-32 space-y-24">
+
+        <!-- Accueil (Version percutante) -->
+        <section id="about" class="space-y-6">
+            <h1 class="text-3xl font-extrabold tracking-tight text-slate-100">
+                Étudiant BTS SIO SISR — Admin Systèmes & Réseaux
+            </h1>
+            <p class="text-slate-400 max-w-2xl leading-relaxed">
+                Spécialisé dans la sécurisation des infrastructures, la virtualisation et le déploiement de services réseau. À la recherche d'une opportunité en alternance ou en emploi.
+            </p>
+            <div class="flex flex-wrap gap-4 pt-2">
+                <a href="#projects" class="bg-emerald-600 hover:bg-emerald-700 text-white px-5 py-2.5 rounded-lg text-sm font-medium transition">
+                    Voir mes projets →
+                </a>
+                <a href="cv.pdf" target="_blank" rel="noopener noreferrer" class="border border-slate-700 text-slate-300 hover:text-white hover:border-slate-500 px-5 py-2.5 rounded-lg text-sm font-medium transition">
+                    Télécharger mon CV (PDF)
+                </a>
+            </div>
+        </section>
+
+        <!-- Compétences Techniques SISR -->
+        <section id="skills" class="space-y-6">
+            <h2 class="text-xl font-bold border-b border-slate-800 pb-2 text-blue-400">Compétences techniques</h2>
+            <div class="grid md:grid-cols-3 gap-4 text-sm">
+                
+                <!-- Systèmes -->
+                <div class="bg-slate-900 p-5 rounded-lg border border-slate-800 space-y-2">
+                    <h3 class="font-semibold text-slate-200">🖥️ Systèmes & Virtu</h3>
+                    <p class="text-slate-400">Windows Server (AD DS, GPO, DNS, DHCP), Linux (Debian, Ubuntu), Proxmox VE, VMware ESXi.</p>
+                </div>
+
+                <!-- Réseaux -->
+                <div class="bg-slate-900 p-5 rounded-lg border border-slate-800 space-y-2">
+                    <h3 class="font-semibold text-slate-200">🌐 Réseaux & Télécoms</h3>
+                    <p class="text-slate-400">VLANs, Routage inter-VLAN, Switches Cisco/HP, pare-feu pfSense, VPN (OpenVPN, IPsec).</p>
+                </div>
+
+                <!-- Sécurité & Supervision -->
+                <div class="bg-slate-900 p-5 rounded-lg border border-slate-800 space-y-2">
+                    <h3 class="font-semibold text-slate-200">🔒 Sécurité & Supervision</h3>
+                    <p class="text-slate-400">Zabbix,Sauvegardes (3-2-1), Durcissement OS, Analyse de trafic (Wireshark).</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Projets & Réalisations -->
+        <section id="projects" class="space-y-6">
+            <h2 class="text-xl font-bold border-b border-slate-800 pb-2 text-blue-400">Projets & Réalisations</h2>
+            
+            <div class="space-y-4">
+                <!-- Projet 1 -->
+                <article class="bg-slate-900 p-6 rounded-lg border border-slate-800 space-y-3">
+                    <div class="flex justify-between items-start flex-wrap gap-2">
+                        <h3 class="font-semibold text-lg text-slate-100">Supervision et alertification du parc informatique</h3>
+                        <span class="text-xs bg-slate-800 text-slate-400 px-2.5 py-1 rounded">Projet TP / Stage</span>
+                    </div>
+                    <p class="text-sm text-slate-400">
+                        Déploiement d'un serveur ubuntu avec Zabbix 7.0. Supervision des équipements réseau via SNMPv3 et alertes instantanées.
+                    </p>
+                    <div class="flex flex-wrap gap-2 text-xs pt-1">
+                        <span class="bg-emerald-950 text-emerald-300 border border-emerald-900 px-2.5 py-1 rounded">Ubuntu</span>
+                        <span class="bg-emerald-950 text-emerald-300 border border-emerald-900 px-2.5 py-1 rounded">Zabbix</span>
+                        <span class="bg-emerald-950 text-emerald-300 border border-emerald-900 px-2.5 py-1 rounded">Cisco Parket Tracer</span>
+                        <span class="bg-emerald-950 text-emerald-300 border border-emerald-900 px-2.5 py-1 rounded">Active Directory</span>
+                    </div>
+                    <div class="pt-2 border-t border-slate-800 flex justify-end">
+                        <a href="doc-projet-1.pdf" target="_blank" rel="noopener noreferrer" class="text-xs text-blue-400 hover:underline flex items-center gap-1">
+                            📄 Documentation technique (PDF) →
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Veille Technologique -->
+        <section id="veille" class="space-y-6">
+            <h2 class="text-xl font-bold border-b border-slate-800 pb-2 text-blue-400">Veille technologique</h2>
+            <div class="bg-slate-900 p-6 rounded-lg border border-slate-800 space-y-3">
+                <h3 class="font-semibold text-slate-200">Sujet de veille : [Ton Sujet de Veille]</h3>
+                <p class="text-sm text-slate-400">
+                    Présentation synthétique de ton sujet de veille technologique (ex: La sécurité des architectures Zéro Trust ou la conteneurisation Docker).
+                </p>
+                <a href="doc-veille.pdf" target="_blank" rel="noopener noreferrer" class="text-xs text-blue-400 hover:underline inline-block pt-1">
+                    📄 Consulter la synthèse de veille (PDF) →
+                </a>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="space-y-6 pb-20">
+            <h2 class="text-xl font-bold border-b border-slate-800 pb-2 text-blue-400">Contact</h2>
+            <div class="space-y-2 text-sm text-slate-400">
+                <p>
+                    Email : 
+                    <a href="mailto:ton.email@domain.com" class="text-blue-400 hover:underline">Mon.email@domain.com</a>
+                </p>
+                <p>
+                    LinkedIn : 
+                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="text-blue-400 hover:underline">Mon numero</a>
+                </p>
+                <p>
+                    GitHub : 
+                    <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="text-blue-400 hover:underline">Mon profil GitHub</a>
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-900 py-6 text-center text-xs text-slate-600">
+        Portfolio BTS SIO SISR — 2026
+    </footer>
+
+</body>
+</html>
